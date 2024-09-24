@@ -1,0 +1,31 @@
+.link-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    font-weight: bold;
+    font-size: 1.3020833333vw;
+    color: #3fb0ff;
+    width: 7.5836em;
+    height: 2.6736em;
+    aspect-ratio: 183 / 60;
+    border: 0.12em solid #3fb0ff;
+    border-radius: 1000px;
+    margin-top: 1.6em;
+    transition: 0.4s;
+    &::after {
+        content: "";
+        width: 0.96em;
+        aspect-ratio: 24 / 19;
+        background: url("../images/btn_arr.png") no-repeat center/cover;
+        transition: transform 0.4s;
+    }
+    &:hover {
+        color: #fff;
+        background: #3fb0ff;
+        &::after {
+            transform: scaleX(-1);
+            filter: brightness(0) invert(1);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@mixin pordBg($link) {
+    display: block;
+    position: relative;
+    width: 25.9895833333vw;
+    aspect-ratio: 373.469 / 417.625;
+    border-radius: 1.0416666667vw;
+    overflow: hidden;
+    background: url($link) no-repeat center/cover;
+}
