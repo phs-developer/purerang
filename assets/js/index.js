@@ -40,7 +40,6 @@ $(function () {
     // ------- 이외 이벤트 ---------
     $(".sc-video .btn-play").click(function () {
         $(".sc-video .inner video").get(0).play();
-        console.log(this);
         gsap.set(this, {
             autoAlpha: 0,
         });
